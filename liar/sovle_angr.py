@@ -7,7 +7,7 @@ def main():
     sm = project.factory.simulation_manager(init_state)
     sm.explore(find=0x00000000000009B0)
     sm.run()
-    return sm.found[0].state.posix.dumps(0)
+    return sm.found[0]
 
 
 if __name__ == '__main__':
